@@ -32,6 +32,7 @@ ALLOWED_HOSTS = ['35.236.172.46']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
+    'zebra.apps.ZebraConFig',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',

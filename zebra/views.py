@@ -11,4 +11,4 @@ who_we_are= Page.objects.filter(page_title='Who We Are')
 # Create your views here.
 class HomePageView(TemplateView):
     def get(self, request, **kwargs):
-        return render(request, 'home-corporate.html', {'who_we_are':who_we_are}, context=None)
+        return render(request, 'home-corporate.html', {'who_we_are':who_we_are})

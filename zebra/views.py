@@ -5,8 +5,7 @@ from django.shortcuts import render
 from django.views.generic import TemplateView
 from .models import Page
 
-def who_we_are():
-    return Page.objects.filter(page_title='Who We Are')
+who_we_are= Page.objects.filter(page_title='Who We Are')
 
 
 # Create your views here.

@@ -7,4 +7,7 @@ from django.db import models
 class Page(models.Model):
     page_title= models.CharField(max_length=1000)
     page_title_2= models.CharField(max_length=100)
-    page_content= models.CharField(max_length=1000)
+    page_content= models.TextField(max_length=1000)
+    def __str__(self):
+        return self.page_title
+

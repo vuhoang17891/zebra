@@ -135,7 +135,7 @@
       <div class="row">
         <div class="col-md-12 text-center">
           <div class="section-title white-color">
-            <h2 class="play-font">{{who_we_are[0].page_title}}</h2>
+            <h2 class="play-font">{% for each in who_we_are %} {{each.page_title}} {% endfor %}</h2>
             <h1 class="roboto-font text-uppercase">Nigo Studio</h1>
             <hr class="center_line white-bg">
           </div>

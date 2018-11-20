@@ -6,7 +6,7 @@ from django.views.generic import TemplateView
 from .models import Page
 
 def who_we_are():
-    return Page.objects.filter(page_title='Who We Are')
+    return Page.objects.filter(page_title='Who we are')
 
 print '+++++++++++++++++++++++' + who_we_are() + '+++++++++++++++++++++++++++'
 
